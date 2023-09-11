@@ -1,0 +1,43 @@
+service: my-serverless-api
+frameworkVersion: '3.34.0'
+
+useDotenv: true
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-2
+  lambdaHashingVersion: 20201221
+  environment:
+      DB_HOST: ${env:DB_HOST}
+      DB_USERNAME: ${env:DB_USERNAME}
+      DB_PASSWORD: ${env:DB_PASSWORD}
+      DB_NAME: ${env:DB_NAME}
+      DB_PORT: ${env:DB_PORT}
+
+
+functions:
+  app:
+    handler: src/index.handler
+    events:
+      - http:
+          path: /api
+          method: get
+          cors: true
+      - http:
+          path: /api/starship/{id}
+          method: get
+          cors: true
+
+      - http:
+          path: /api/get-supplier
+          method: get
+          cors: true
+      - http:
+          path: /api/create-supplier
+          method: post
+          cors: true
+
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin
+

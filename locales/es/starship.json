@@ -1,0 +1,20 @@
+{
+  "MGLT":"MGLT",
+  "cargo_capacity":"capacidad_de_carga",
+  "consumables":"consumibles",
+  "cost_in_credits":"costo_en_creditos",
+  "created":"creado",
+  "crew":"tripulacion",
+  "edited":"editado",
+  "hyperdrive_rating":"clasificacion_hiperimpulsor",
+  "length":"longitud",
+  "manufacturer":"fabricante",
+  "max_atmosphering_speed":"velocidad_maxima_atmosfera",
+  "model":"modelo",
+  "name":"nombre",
+  "passengers":"pasajeros",
+  "films":"peliculas",
+  "pilots":"piloto",
+  "starship_class":"clase_de_nave_estelar",
+  "url":"url"
+}
