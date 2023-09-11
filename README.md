@@ -3,8 +3,8 @@
 
 
 Esta es una breve descripcion de la aplicacion
--Tiene como objetivo consultar una api externa y guardar los datos en una base de datos, para luego poder consultarlos.
--Tiene metodos para internacionalizar los datos traidos de la api
+- Tiene como objetivo consultar una api externa y guardar los datos en una base de datos, para luego poder consultarlos.
+- Tiene metodos para internacionalizar los datos traidos de la api
 - Tiene pruebas unitarias para los metodos de internacionalizacion
 
 ## Installation
